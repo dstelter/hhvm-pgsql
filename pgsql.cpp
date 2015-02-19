@@ -1368,11 +1368,7 @@ static Variant HHVM_FUNCTION(pg_fetch_array, const Resource& result, const Varia
 }
 
 static Variant HHVM_FUNCTION(pg_fetch_assoc, const Resource& result, const Variant& row /* = null_variant */) {
-    Variant res = f_pg_fetch_array(result, row, PGSQL_ASSOC);
-    if (res.isNull()) {
-        FAIL_RETURN;
-    }
-    return res;
+    return f_pg_fetch_array(result, row, PGSQL_ASSOC);
 }
 
 static Variant HHVM_FUNCTION(pg_fetch_all, const Resource& result) {
