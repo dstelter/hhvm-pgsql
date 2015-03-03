@@ -5,6 +5,7 @@
 #include <iostream>
 #include <libpq-fe.h>
 #include <utility>
+#include <queue>
 
 namespace PQ {
 
