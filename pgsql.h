@@ -4,6 +4,7 @@
 #include "pq.h"
 
 #include "hphp/runtime/base/base-includes.h"
+#include "hphp/runtime/ext/extension.h"
 
 #ifdef NEWOBJ
 #define NEWRES(type) NEWOBJ(type)
